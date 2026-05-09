@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --color-accent: #60a5fa;
+  --color-bg-dark: #050714;
+}
+
+@layer base {
+  html, body, #root {
+    @apply w-full h-full m-0 p-0 overflow-hidden bg-[var(--color-bg-dark)];
+    font-family: var(--font-sans);
+  }
+}
